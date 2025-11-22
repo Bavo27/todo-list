@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function class1() {
+export default function Class1() {
   return (
     <div>
       <h2>Class 1 Component</h2>
