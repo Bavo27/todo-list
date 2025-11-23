@@ -1,10 +1,11 @@
 import React from "react";
+import '../Classes.css';
 
 export default function Class1() {
   return (
-    <div>
-      <h2>Class 1 Component</h2>
-      <p>This is a placeholder for class1 component content.</p>
+    <div className="class1-container">
+      <h2>This is comp225</h2>
+      
     </div>
   );
 }
