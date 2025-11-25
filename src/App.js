@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
-import Class1 from './components/Class1';
+import Class from './components/Class';
 
 function App() {
   const [page, setPage] = useState("home");
@@ -11,15 +11,15 @@ function App() {
       <div className="App">
         <header>Bavo's classes</header>
         <button onClick={() => setPage("comp225")}>Comp 225</button>
-        <button>Political Economy</button>
-        <button>Comp 221</button>
-        <button>Chinese</button>
+        <button onClick={() => setPage("POLI")}>Political Economy</button>
+        <button onClick={() => setPage("comp221")}>Comp 221</button>
+        <button onClick={() => setPage("Chinese")}>Chinese</button>
       </div>
     );
   }
 
-  if (page === "comp225") {
-    return <Class1 />;
+  if (page !== "home") {
+    return <Class {...Class(page)}/>;
   }
 }
 
